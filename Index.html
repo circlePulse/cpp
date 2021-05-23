@@ -12,11 +12,18 @@
     <link rel="stylesheet" href="/Assets/Icons/css/icons.css" />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <title>Dev. | Homepage</title>
+
+    <script>
+      let warningElement = document.querySelector("#warning");
+      const closeWarning = () => {
+        warning.style.visibility = "hidden";
+      };
+    </script>
   </head>
   <body>
     <!--Temporary!-->
     <div class="warning-wrapper">
-      <div class="warning">
+      <div class="warning" id="warning">
         <h1 class="warning-heading"></h1>
         <h1 class="warning-heading">
           <i
@@ -32,13 +39,27 @@
           Warning!
         </h1>
         <p class="warning-text">This site is under construction!</p>
+        <p
+          onclick="closeWarning ()"
+          class="button-black"
+          style="
+            cursor: pointer;
+            font-weight: bold;
+            float: right;
+            margin: 0;
+            margin-bottom: 14px;
+            padding: 0;
+          "
+        >
+          Close
+        </p>
       </div>
     </div>
     <!--Temporary!-->
 
     <navbar>
       <img class="navbar-logo" src="assets/Logo Black.png" alt="Dev Dot Logo" />
-      <div class="centered-inline nav-text">
+      <div class="centered-nav-text">
         <span id="nav-text-1">Courses</span>
         <span id="nav-text-2">About</span>
         <span id="nav-text-3">Pricing</span>
