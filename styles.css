@@ -1,0 +1,62 @@
+:root {
+  --browser-width: var(100vw);
+  --browser-height: var(100vh);
+}
+
+body {
+  background-color: #f7f7f7;
+  color: #010427;
+  font-family: "Segoe UI", -apple-system;
+  margin: 0;
+  padding: 0;
+}
+.warning-wrapper {
+  width: 100vw;
+  display: flex;
+}
+
+.warning {
+  position: fixed;
+  top: 20px;
+  z-index: 10000;
+  background-color: #e4094b;
+  color: #fff;
+  padding: 10px 30px 10px 15px;
+  margin: 25px;
+  font-family: sans-serif;
+  border-radius: 10px;
+  box-shadow: 0px 5px 25px rgba(86, 93, 105, 0.137),
+    inset 0px 5px 25px rgba(18, 21, 26, 0.137);
+  justify-self: center;
+}
+
+navbar {
+  background-color: #ececec;
+  display: inline-flex;
+  align-items: center;
+  width: var(--browser-width);
+}
+
+navbar button {
+  height: 40px;
+  width: 130px;
+  justify-self: flex-end;
+  border-radius: 5px;
+  padding: 7px 16px;
+  font-size: 19px;
+  background-color: #177feb;
+  border: none;
+  color: #fff;
+  font-weight: light;
+}
+
+section.hero {
+  position: relative;
+  top: 6px;
+  background-color: #ececec;
+}
+
+img.navbar-logo {
+  width: 73.75px;
+  height: auto;
+}
