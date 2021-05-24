@@ -1,11 +1,15 @@
 :root {
-  --browser-width: var(100vw);
-  --browser-height: var(100vh);
+  --browser-width: 100vw;
+  --browser-height: 100vh;
+  --primary: #177feb;
+  --background: #f7f7f7;
+  --foreground: #ececec;
+  --black: #010427;
 }
 
 body {
-  background-color: #f7f7f7;
-  color: #010427;
+  background-color: var(--background);
+  color: var(--black);
   font-family: "Segoe UI", "Open Sans", -apple-system;
   margin: 0;
   padding: 0;
@@ -27,43 +31,40 @@ body {
 }
 
 navbar {
-  background-color: #ececec;
+  background-color: var(--foreground);
   display: flex;
   justify-content: space-between;
   align-items: center;
   align-content: center;
-  width: 100%;
-  padding: 0 100px;
+  width: var(--browser-width);
+  padding: 0;
+  justify-items: space-around;
+}
+
+button {
+  height: 40px;
+  width: auto;
+  padding: 7px 16px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+  font-weight: medium, semibold;
 }
 
 button.button-blue {
-  height: 40px;
-  width: auto;
-  padding: 7px 16px;
-  border-radius: 5px;
-  border: none;
-  font-size: 19px;
-  background-color: #177feb;
+  background-color: var(--primary);
   color: #fff;
-  font-weight: light;
 }
 
 button.button-black {
-  height: 40px;
-  width: auto;
-  padding: 7px 16px;
-  border-radius: 5px;
-  border: none;
-  font-size: 19px;
-  background-color: #010427;
+  background-color: var(--black);
   color: #fff;
-  font-weight: light;
 }
 
 section.hero {
   position: relative;
-  top: 6px;
-  background-color: #ececec;
+  top: 3px;
+  background-color: var(--foreground);
 }
 
 img.navbar-logo {
@@ -82,4 +83,8 @@ button {
 .centered-nav-text span {
   padding: 0 45px;
   font-weight: bold;
+}
+
+.blue {
+  color: var(--primary);
 }
