@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="500" height="500" viewBox="0 0 500 500">
+  <defs>
+    <clipPath id="clip-Logo_White_black_dot_">
+      <rect width="500" height="500"/>
+    </clipPath>
+  </defs>
+  <g id="Logo_White_black_dot_" data-name="Logo White (black dot)" clip-path="url(#clip-Logo_White_black_dot_)">
+    <g id="Logo" transform="translate(111 203)">
+      <path id="Dot" d="M12.719,0A12.764,12.764,0,1,1,0,12.764,12.741,12.741,0,0,1,12.719,0Z" transform="translate(251.652 67.573)" fill="#010427"/>
+      <path id="Text" d="M87.586,27.781A50.609,50.609,0,0,1,81.77,52.37,40.147,40.147,0,0,1,65.149,68.858q-10.805,5.8-24.916,5.8H1.652V-16.8H39.407Q87.586-16.8,87.586,27.781Zm-29.174.255a26.4,26.4,0,0,0-2.7-12.055,19.583,19.583,0,0,0-7.723-8.292A23.014,23.014,0,0,0,36.166,4.755H29.11V53.1H36.8q9.852,0,15.731-6.793T58.412,28.036Zm42.013,46.627V-16.8h56.759V4.755h-29.3V18.085H155.4V39.645H127.883V53.1h31.4V74.662Zm123.752,0H193.35L163.922-16.8h29.556L207.4,39.517a63.165,63.165,0,0,1,1.843,10.206h.636a70.6,70.6,0,0,1,1.97-10.588L225.385-16.8h28.6Z" transform="translate(-1.652 16.805)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
