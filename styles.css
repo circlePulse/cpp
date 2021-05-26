@@ -35,10 +35,10 @@ navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  align-content: center;
-  width: var(--browser-width);
+  align-content: center; /*
+  width: var(--browser-width);*/
+  width: 100%;
   padding: 0;
-  justify-items: space-around;
 }
 
 button {
@@ -61,9 +61,9 @@ button.button-black {
   color: #fff;
 }
 
-section.hero {
+main {
   position: relative;
-  top: 3px;
+  top: 0.005em;
   background-color: var(--foreground);
 }
 
@@ -87,4 +87,8 @@ button {
 
 .blue {
   color: var(--primary);
+}
+
+navbar button {
+  margin: 0;
 }
