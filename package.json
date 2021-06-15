@@ -1,0 +1,19 @@
+{
+  "name": "codecademy-portfolio-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/circlePulse/Codecademy-Portfolio-Project.git"
+  },
+  "author": "circlePulse",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/circlePulse/Codecademy-Portfolio-Project/issues"
+  },
+  "homepage": "https://github.com/circlePulse/Codecademy-Portfolio-Project#readme"
+}
