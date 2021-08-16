@@ -45,9 +45,39 @@ nav {
 nav>*{
     cursor: pointer;
 }
+.hero-wrapper{
+    background-color: var(--foreground);
+    height: 580px;
+}
+.hero-wrapper button{
+    font-size: 1.4em;
+    font-weight: normal;
+    border-radius: 6px;
+}
+.hero-text{
+    display: flex;
+    width: 700px;
+    height: 400px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 70px;
+    text-align: center;
+}
+.hero-text-1{
+    font-size: 121px;
+    margin: 0 auto;
 
+}
+.hero-text-2{
+    font-size: 99px;
+    margin: 0 auto;
+}
+.hero-text-3{
+    font-size: 28px
+}
 button {
-  height: 40px;
+  height: auto;
   width: auto;
   padding: 7px 16px;
   border-radius: 5px;
@@ -55,6 +85,7 @@ button {
   font-size: /*16px*/ 1em;
   font-weight: 550;
   cursor: pointer;
+  font-weight: bold;
 }
 
 button.button-blue {
@@ -69,8 +100,8 @@ button.button-black {
 
 main {
   position: relative;
-  top: 0.5px;
-  background-color: var(--foreground);
+  top: 5px;
+  background-color: var(--background);
 }
 
 img.navbar-logo {
