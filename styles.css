@@ -41,11 +41,16 @@ nav {
   align-items: center;
   padding: 0 24px;
     height: 87px;
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+    width: 100%;
 }
 nav>*{
     cursor: pointer;
 }
 .hero-wrapper{
+
     background-color: var(--foreground);
     height: 580px;
 }
@@ -100,7 +105,7 @@ button.button-black {
 
 main {
   position: relative;
-  top: 5px;
+  top: 92px;
   background-color: var(--background);
 }
 
