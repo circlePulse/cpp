@@ -81,15 +81,15 @@
         </section>
 
       <section class="features">
-        <div class="feature-card">
+        <div class="feature-card card-1">
           <h3 class="heading">Learn at your own pace</h3>
           <p class="paragraph">Lorem Ipsum is simply dummy text!</p>
         </div>
-        <div class="feature-card">
+        <div class="feature-card card-2">
           <h3 class="heading">Get a personal tutor</h3>
           <p class="paragraph">Lorem Ipsum is simply dummy text!</p>
         </div>
-        <div class="feature-card">
+        <div class="feature-card card-3">
           <h3 class="heading">Everything you need to know!</h3>
           <p class="paragraph">Lorem Ipsum is simply dummy text!</p>
         </div>
@@ -143,11 +143,11 @@
       const navbar = document.querySelector(".nav")
       //console.log(navbar)
       function changeNavColor(){
-        if(window.scrollY >= 56){
+        if (window.scrollY >= 56){
         document.body.classList.add('blueNav')
         document.querySelector("nav img").src = 'Assets/Logo_White_Black_Dot.svg'
         console.log(navbar)
-        }else {
+        } else {
         document.body.classList.remove('blueNav')
         document.querySelector("nav img").src = 'Assets/Logo_Black.svg'
         }
