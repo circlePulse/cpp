@@ -12,12 +12,13 @@
     <link rel="stylesheet" href="/Assets/Icons/css/icons.css" />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <title>Dev. | Homepage</title>
-
     <script>
       const closeWarning = () => {
         warning.style.visibility = "hidden";
       };
-    </script>
+      </script>
+
+
   </head>
   <body>
     <!--Temporary!-->
@@ -55,9 +56,9 @@
       </div>
     </div>
     <!--Temporary!-->
-
-    <nav>
-      <img class="navbar-logo" src="Assets/Logo Black.svg" alt="Dev Dot Logo" />
+<div class="scrollTarget">
+    <nav id="nav">
+      <img class="navbar-logo" src="Assets/Logo_Black.svg" alt="Dev Dot Logo" />
       <div class="centered-nav-text">
         <span id="nav-text-1">Courses</span>
         <span id="nav-text-2">About</span>
@@ -101,8 +102,8 @@
           <h1>Adding interactivity</h1>
         </div>
         <div class="video">
-          <img src="/Assets/Play Button.svg" alt="Play Video" />
-          <img src="/Assets/Screenshot Desk.jpg" alt="Video" />
+          <img src="/Assets/Play_Button.svg" alt="Play Video" />
+          <img src="/Assets/Screenshot_Desk.jpg" alt="Video" />
         </div>
         <aside class="course">
           <h1>Up Next</h1>
@@ -128,7 +129,7 @@
       </section>
 
       <footer>
-        <img src="/Assets/Logo Black.svg" alt="Logo" />
+        <img src="/Assets/Logo_Black.svg" alt="Logo" />
         <ul>
           <li>Courses</li>
           <li>Pricing</li>
@@ -137,5 +138,25 @@
         </ul>
       </footer>
     </main>
+</div>
+
+
+    <script>
+      const navbar = document.querySelector(".nav")
+      //console.log(navbar)
+      function changeNavColor(){
+        if(window.scrollY >= 56){
+        document.body.classList.add('blueNav')
+        document.querySelector("nav img").src = 'Assets/Logo_White_Black_dot.svg'
+        console.log(navbar)
+        }else {
+        document.body.classList.remove('blueNav')
+        document.querySelector("nav img").src = 'Assets/Logo_Black.svg'
+        }
+      }
+
+      window.addEventListener("scroll", changeNavColor)
+    </script>
+
   </body>
 </html>

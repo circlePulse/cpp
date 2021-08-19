@@ -40,17 +40,26 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0 24px;
-    height: 87px;
-    position: fixed;
-    top: 0px;
-    z-index: 2;
-    width: 100%;
+  height: 87px;
+  position: fixed;
+  top: 0px;
+  z-index: 2;
+  width: calc(100% - 39px);
+  transition: all 0.5s;
+}
+
+.blueNav nav {
+    background-color: var(--primary);
+    color: white;
+}
+.blueNav nav button {
+    background-color: white;
+    color: var(--primary);
 }
 nav>*{
     cursor: pointer;
 }
 .hero-wrapper{
-
     background-color: var(--foreground);
     height: 580px;
 }
