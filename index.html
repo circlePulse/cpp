@@ -140,18 +140,16 @@
 </div>
 
     <script>
-      const navbar = document.querySelector(".nav")
-      //console.log(navbar)
-      function changeNavColor(){
-        if (window.scrollY >= 56){
+      const changeNavColor = () => {
+        if (window.scrollY >= /*56*/590){
         document.body.classList.add('blueNav')
         document.querySelector("nav img").src = 'Assets/Logo_White_Black_Dot.svg'
-        console.log(navbar)
         } else {
         document.body.classList.remove('blueNav')
         document.querySelector("nav img").src = 'Assets/Logo_Black.svg'
         }
       }
+
 
       window.addEventListener("scroll", changeNavColor)
     </script>
