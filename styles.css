@@ -4,11 +4,13 @@
   --primary: #177feb;
   --background: #f7f7f7;
   --foreground: #ececec;
+  --foreground-rgba: rgba(236, 236,236,0.5);
+  --primary-rgba: rgba(23, 127, 235, 0.8);
   --black: #010427;
 }
 
 * {
-  font-family: "Segoe UI", "Open Sans", "Helvetica Neue", Roboto, Oxygen, Ubuntu,
+  font-family: "Segoe UI", "Open Sans", open-sans, "Helvetica Neue", Roboto, Oxygen, Ubuntu,
     Cantarell, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
@@ -35,21 +37,24 @@ body {
 }
 
 nav {
-  background-color: var(--foreground);
+  background-color: var(--foreground-rgba);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 0 24px;
+  /*padding: 0 24px;*/
   height: 87px;
   position: fixed;
   top: 0;
   z-index: 2;
-  width: calc(100% - 39px);
+  width: /*calc(100% - 40px)*/100%;
   transition: all 0.5s;
+    border-bottom: 1px inset rgba(225,225,225,0.75)
 }
 
 .blueNav nav {
-    background-color: var(--primary);
+    background-color: var(--primary-rgba);
     color: white;
 }
 .blueNav nav button {
@@ -81,11 +86,13 @@ nav>*{
 .hero-text-1{
     font-size: 121px;
     margin: 0 auto;
+    font-weight: bolder;
 
 }
 .hero-text-2{
     font-size: 99px;
     margin: 0 auto;
+    font-weight: bolder;
 }
 .hero-text-3{
     font-size: 28px
@@ -113,7 +120,7 @@ button.button-black {
 
 main {
   position: relative;
-  top: 92px;
+  top: 89px;
   background-color: var(--background);
 }
 
@@ -137,12 +144,12 @@ img.navbar-logo {
 
 
 .features {
-    display: grid;
-    grid-gap: 25px;
-    grid-template-columns: 200px repeat(3, 1fr) 200px;
+    display: flex;
+    justify-content: center;
     max-width: 100vw;
-    margin: 45px 0;
     text-align: center;
+    margin: 45px 0;
+    flex-wrap: wrap;
 }
 
 .feature-card{
@@ -150,19 +157,14 @@ img.navbar-logo {
     width: 300px;
     padding: 38px 100px;
     border-radius: 25px;
-}
-
-.card-1{
-    grid-column-start: 2;
-}
-
-.card-2{
-    grid-column-start: 3;
-}
-.card-3{
-    grid-column-start: 4;
+    margin: 25px;
 }
 
 .lesson-example{
     background-color: var(--foreground);
 }
+
+
+
+
+
