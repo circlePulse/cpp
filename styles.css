@@ -36,6 +36,7 @@ button.button-blue {
 button.button-black {
     background-color: var(--black);
     color: #fff;
+    font-weight: bold;
 }
 .FI{
     text-align: center;
@@ -59,7 +60,7 @@ main {
     position: fixed;
     top: 20px;
     z-index: 10000;
-    background-color: #e4094b;
+    background-color: /*#e4094b*/var(--primary);
     color: #fff;
     padding: 10px 30px 10px 15px;
     margin: 25px;
@@ -177,6 +178,9 @@ img.navbar-logo {
 /* LESSON STYLES */
 .lesson-example{
     background-color: var(--foreground);
+}
+#player {
+    width: calc(100vw - 20px);
 }
 /* END LESSON STYLES */
 
