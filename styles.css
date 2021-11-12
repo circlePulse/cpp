@@ -1,3 +1,4 @@
+/* GLOBAL STYLES */
 :root {
   --browser-width: 100vw;
   --browser-height: 100vh;
@@ -8,34 +9,79 @@
   --primary-rgba: rgba(23, 127, 235, 0.8);
   --black: #010427;
 }
-
 * {
   font-family: "Segoe UI", "Open Sans", open-sans, "Helvetica Neue", Roboto, Oxygen, Ubuntu,
     Cantarell, -apple-system, BlinkMacSystemFont, sans-serif;
 }
-
 body {
   background-color: var(--background);
   color: var(--black);
   margin: 0;
   padding: 0;
 }
-
-.warning {
-  position: fixed;
-  top: 20px;
-  z-index: 10000;
-  background-color: #e4094b;
-  color: #fff;
-  padding: 10px 30px 10px 15px;
-  margin: 25px;
-  font-family: "Open Sans", sans-serif;
-  border-radius: 10px;
-  box-shadow: 0 5px 25px rgba(86, 93, 105, 0.137),
-    inset 0 5px 25px rgba(18, 21, 26, 0.137);
-  justify-self: center;
+button {
+    height: auto;
+    width: auto;
+    padding: 7px 16px;
+    border-radius: 5px;
+    border: none;
+    font-size: /*16px*/ 1em;
+    cursor: pointer;
+    font-weight: bold;
 }
+button.button-blue {
+    background-color: var(--primary);
+    color: #fff;
+}
+button.button-black {
+    background-color: var(--black);
+    color: #fff;
+}
+.FI{
+    text-align: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding-right: 2px;
+    padding-top: 5px;
+}
+main {
+    position: relative;
+    top: 89px;
+    background-color: var(--background);
+}
+.blue {
+    color: var(--primary);
+}
+/* END GLOBAL STYLES */
 
+/* WARNING STYLES --- TEMPORARY!! */
+.warning {
+    position: fixed;
+    top: 20px;
+    z-index: 10000;
+    background-color: #e4094b;
+    color: #fff;
+    padding: 10px 30px 10px 15px;
+    margin: 25px;
+    font-family: "Open Sans", sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(86, 93, 105, 0.137),
+    inset 0 5px 25px rgba(18, 21, 26, 0.137);
+    justify-self: center;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+.warning-wrapper{
+    z-index: 10;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+.warning-wrapper.warning-hidden {
+    opacity: 0;
+}
+/* END WARNING STYLES */
+
+/* NAV STYLES */
 nav {
   background-color: var(--foreground-rgba);
   backdrop-filter: blur(12px);
@@ -52,7 +98,6 @@ nav {
   transition: all 0.5s;
     border-bottom: 1px inset rgba(225,225,225,0.75)
 }
-
 .blueNav nav {
     background-color: var(--primary-rgba);
     color: white;
@@ -97,52 +142,21 @@ nav>*{
 .hero-text-3{
     font-size: 28px
 }
-button {
-  height: auto;
-  width: auto;
-  padding: 7px 16px;
-  border-radius: 5px;
-  border: none;
-  font-size: /*16px*/ 1em;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-button.button-blue {
-  background-color: var(--primary);
-  color: #fff;
-}
-
-button.button-black {
-  background-color: var(--black);
-  color: #fff;
-}
-
-main {
-  position: relative;
-  top: 89px;
-  background-color: var(--background);
-}
-
 img.navbar-logo {
-  width: 73.75px;
-  height: auto;
+    width: 73.75px;
+    height: auto;
 }
-
 .centered-nav-text {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 .centered-nav-text span {
-  padding: 0 45px;
-  font-weight: bold;
+    padding: 0 45px;
+    font-weight: bold;
 }
+/* END NAV STYLES */
 
-.blue {
-  color: var(--primary);
-}
-
-
+/* FEATURE CARD STYLES */
 .features {
     display: flex;
     justify-content: center;
@@ -151,7 +165,6 @@ img.navbar-logo {
     margin: 45px 0;
     flex-wrap: wrap;
 }
-
 .feature-card{
     background-color: var(--foreground);
     width: 300px;
@@ -159,11 +172,13 @@ img.navbar-logo {
     border-radius: 25px;
     margin: 25px;
 }
+/* END FEATURE CARD STYLES */
 
+/* LESSON STYLES */
 .lesson-example{
     background-color: var(--foreground);
 }
-
+/* END LESSON STYLES */
 
 
 

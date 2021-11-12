@@ -19,30 +19,17 @@
     <div class="warning" id="warning">
         <h1 class="warning-heading"></h1>
         <h1 class="warning-heading">
-            <i
-                    class="FI FIcon-x-octagon"
-                    style="
-              text-align: center;
-              padding-bottom: 0;
-              margin-bottom: 0;
-              padding-right: 2px;
-              padding-top: 5px;
-            "
-            ></i>
+            <i class="FI FIcon-x-octagon"></i>
             Warning!
         </h1>
         <p class="warning-text">This site is under development!</p>
-        <p
-                onclick="closeWarning ()"
-                class="button-black"
-                style="
+        <p onclick="closeWarning ()" class="button-black" style="
             cursor: pointer;
             font-weight: bold;
             float: right;
             margin: 0 0 14px 0;
             padding: 0;
-          "
-        >
+ ">
             Close
         </p>
     </div>
@@ -147,7 +134,8 @@
 
     const warning = document.querySelector('.warning-wrapper')
     const closeWarning = () => {
-        warning.style.visibility = "hidden";
+        warning.classList.toggle('warning-hidden')
+//        warning.style.visibility = "hidden";
     };
 </script>
 
