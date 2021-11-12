@@ -1,2 +1,2 @@
 NOTE:
-Refrence only! Do not include this directory in stable
+Reference only! Do not include this directory in stable
